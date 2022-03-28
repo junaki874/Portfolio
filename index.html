@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="description" content="my portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/d7ed437d3c.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+<!--message option start-->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+function sendmail(){
+  /*var name1=$('#name').val();
+  var subject1=$('#subject').val();
+  var email1= $('#email').val();
+  var project1= $('#project').val();   
+
+  var message1= $('#message').val();
+
+  var bdy = 'Name: '+name1+'<br>Subject: '+subject1+'<br>Email: '+email1+'Project: '+project1+'<br> Message: '+message1;
+*/
+
+
+
+
+  Email.send({
+    SecureToken : "cebbab54-38bf-4eae-b0d8-19ee6ec8089d",
+    To : 'asmaul.dev72@gmail.com',
+    From : "junaki874@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+message => console.log(message)
+);
+}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+    <!--header section starts-->
+   
+     <header>
+        <marquee behavior="" direction="top">
+         
+            <div class="mywatch">
+              <span class="H"></span>
+              <span class="M"></span>
+              <span class="date"></span>
+            </div>
+            <script >
+
+                function myfn(){
+                  var mydate= new Date();
+             
+                  var hr, min=(mydate.getMinutes()<10)?"0" + mydate.getMinutes(): mydate.getMinutes(), sec=(mydate.getSeconds()<10) ? "0"+mydate.getSeconds(): mydate.getSeconds(),
+                  M= (mydate.getHours()>=12 ) ?"PM":"AM";
+             
+                 if(mydate.getHours()==0){
+                   hr=12;
+                 }else if(mydate.getHours()>12){
+                   hr=mydate.getHours()-12;
+                 } else{
+                   hr=mydate.getHours();
+                 }
+               var time= hr+":"+min+":"+sec+":";
+             
+               document.getElementsByClassName("H")[0].innerHTML=time;
+               document.getElementsByClassName("M")[0].innerHTML=M;
+             
+               var myday=["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thurseday", "Friday"];
+               var myMonth=["January", "February", "March", "April","May", "June", "July", "August", "September", "October", "November","December"];
+             
+               var day=mydate.getDate();
+             
+               var currentDate=myday[mydate.getDay()]+","+ myMonth[mydate.getMonth()]+" "+day;
+               document.getElementsByClassName("date")[0].innerHTML=currentDate;
+                }
+                myfn();
+             setInterval(function(){
+               myfn();
+             },1000);
+              </script>
+             
+
+        </marquee>
+         <div class="user">
+
+          <img src="junaki.jpg" alt="">
+             <h3 class="name">Junaki Akter</h3>
+            <p class="post">Front-End Developer</p>
+
+         </div>
+         <nav class="navbar">
+             <ul>
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#service">Service</a></li>
+                 <li><a href="#education">Education</a></li>
+                 <li><a href="#contact">Contact</a></li>
+
+             </ul>
+         </nav>
+     </header>
+    <!-- header section end-->
+
+    <!--content sectoin starts -->
+   <div class="container">
+  
+       <section class="home" id="home">
+      
+
+          <h3>
+              Hi there....
+          </h3>
+          <h3 class="name"><span> Junaki Akter</span></h3>
+          <h3 class="post">I am a <span class="typing-text">front-end Developer</span></h3>
+          <a href="#"><button class="btn">hire me</button></a>
+          <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100009223997787" class="fab fa-facebook-f"></a>
+            <a href="https://join.skype.com/invite/NtRMagd9oZLL" class="fab fa-skype"></a>
+
+            <a href="https://www.linkedin.com/in/junaki-akter-067268170/" class="fab fa-linkedin"></a>
+          </div>
+                                                                                                                                                                                                                                                                                          
+       </section>
+       <!--about section start-->
+       <section class="about" id="about">
+           <h1 class="heading">about me</h1>
+           <div class="content">
+               <h3 class="name">my name is <span>Junaki Akter</span></h3>
+               <p>I'm a Front-End Developer located in Dhaka, Bangladesh. I have a serious passion for web developing and design. <br> Well-organised person, problem solver, independent employee with high attention to detail. Fan of Bangla and English literature. Like to write poem in leisure time.<br>Interested in the entire frontend spectrum and working on ambitious projects with positive people </p>
+             
+            </div>
+               <div class="skill">
+                   <div class="progress">
+                       <h3>html <span>95%</span></h3>
+                       <div class="bar"><span></span></div>
+
+                   </div>
+
+              <div class="progress">
+                  <h3>css <span>85%</span></h3>
+                  <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                  <h3>javascript <span>65%</span></h3>
+                  <div class="bar"><span></span></div>
+
+              </div>
+              <div class="progress">
+                <h3>java <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+
+            </div>
+            <div class="progress">
+              <h3>PHP<span>80%</span></h3>
+              <div class="bar"><span></span></div>
+
+          </div>
+            <div class="progress">
+                <h3>c/c++<span>90%</span></h3>
+                <div class="bar"><span></span></div>
+
+            </div>
+           </div>
+       </section>
+       <!--about section stop-->
+
+       <!--service section start-->
+
+           <section class="service" id="service">
+             <h1 class="heading">my service</h1>
+             <div class="box-container">
+               <div class="box">
+                <i class="fab fa-html5"></i>
+
+                 <p>HTML5  allows users to have a consistent web experience across multiple devices and CSS3 used for design pages.
+                   My project is on html5 <a href="https://junaki874.github.io/E-commerce-/">E-Commerce Site</a>
+                 </p>
+               </div>
+               <div class="box">
+                <i class="fa fa-database" style="font-size:36px"></i>
+                 <p>I can connect database using MySql for web page, and SqlLite for Mobile Application|(Android)</p>
+               </div>
+               <div class="box">
+             
+                <i class="fab fa-js"></i>
+                 <p>I'm very Interested in Javascript. I wanna make good profession on Javascript both backend and frontend.</p>
+               </div>
+               <div class="box">
+                <i class="fab fa-java"></i>
+                 <p>Java is used for backend language in mobile application. I am working in java , javafx</p>
+               </div>
+               <div class="box">
+                <i class="fab fa-android"></i>
+                 <p>For Mobile Application(Android), I use java , and I have project on it.</p>
+               </div>
+               <div class="box">
+                <i class="fab fa-php"></i>
+                 <p>PHP is my backend language.I like to work on andhave project using php</p>
+               </div>
+             </div>
+           </section>
+
+       <!--service section stop-->
+
+
+         <!--education section start -->
+        <section class="education" id="education">
+          <h1 class="heading">my education</h1>
+          <div class="container-box">
+            <div class="box">
+
+
+              <div class="year">2016-2018</div>
+              <h3>problem solving</h3>
+              <p>In 2016-2018, I started problem solving in various online judge line codeforces, uva, uri and participate intra programming contest, online programming contest</p>
+            </div>
+            <div class="box">
+
+
+              <div class="year">2018-2020</div>
+              <h3>Android development</h3>
+              <p>In 2018-2020, I learn Java and android. Then work on mobile application. I have project on mobile application</p>
+            </div>
+            <div class="box">
+              <div class="year">2020-2021</div>
+              <h3>back-end development</h3>
+              <p>I learn html, css, php for back-end development. MySql for database connection and store data.</p>
+            </div>
+            <div class="box">
+
+
+              <div class="year">2021-Present</div>
+              <h3>front-end development</h3>
+              <p>I am still learning and working JavaScript. My goal is both  side back-end and front-end development. Reactjs, Nodejs is my plan to learn </p>
+            </div>
+
+          
+        
+          </div>
+        </section>
+
+         <!--education section stop-->
+
+
+         <!--contact section start-->
+
+         <section class="contact" id="contact">
+             <h1 class="heading"  contact me </h1>
+
+             <div class="row">
+
+               <form  method="POST">
+            
+                <input type="text" name="name" placeholder="first name" id="name" class="box">
+                <input type="text" name="subject" placeholder="subject" id="subject" class="box">
+                <input type="email" name="email" placeholder="your email" id="email" class="box">
+                <input type="text" name="project" placeholder="your project" id="project" class="box">
+                <textarea name="text" placeholder="message" id="message" cols="30" rows="10" class="box_msg"></textarea>
+
+                <input type="button" value="send message" class="btn" onclick="sendmail()" >
+              </form>
+              <div class="content">
+                <div class="icon">
+                  <h3><i class="fas fa-map-marker-alt"></i> address</h3>
+                  <p>Rajabari, Uttarakhan,Uttara Dhaka-1230</p>
+                </div>
+                <div class="icon">
+                  <h3><i class="fas fa-envelope"></i> email</h3>
+                  <p>junaki874@gmail.com</p>
+                </div>
+                <div class="icon">
+                  <h3><i class="fas fa-phone"></i>phone</h3>
+                  <p>01843017713</p>
+                </div>
+              </div>
+
+
+
+             </div>
+
+         </section>
+         <!--content section stop-->
+   </div>
+    <!-- content section stop-->
+
+<!--theme color change button start-->
+<div class="theme-toggle">
+  <span style="background: linear-gradient(deeppink, purple);"></span>
+  <span style="background: linear-gradient(lightgreen, crimson);"></span>
+  <span style="background: linear-gradient(blueviolet, deeppink);"></span>
+  <span style="background: linear-gradient(coral, blueviolet);"></span>
+
+  <span style="background: linear-gradient(#999, #111);"></span>
+</div>
+<!--theme color change button stop-->
+
+
+<!--js file start-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+ var type= new Typed('.typing-text',{
+     strings: ['web develoer', 'front-end developer','mobile application developer', 'programmer'],
+     typeSpeed:120,
+     loop: true
+ });
+ 
+
+
+// theme script start
+let themeclr=document.querySelectorAll('.theme-toggle span');
+themeclr.forEach(color => color.addEventListener('click',()=>{
+  let background=color.style.background;
+  document.querySelector('body').style.background=background;
+}));
+
+
+//<!--theme  off-->
+</script>
+<!--js file stop-->
+
+
+<!-- message option stop-->
+</body>
+</html>
