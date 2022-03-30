@@ -19,27 +19,37 @@
 
 <script>
 function sendmail(){
-  /*var name1=$('#name').val();
-  var subject1=$('#subject').val();
-  var email1= $('#email').val();
-  var project1= $('#project').val();   
+let  name1= document.getElementById("name").value;
+  let subject1=document.getElementById("subject").value;
+ let email1=  document.getElementById("email").value;
+ let project1= document.getElementById("project").value;   
 
-  var message1= $('#message').val();
+ let message1=document.getElementById("message").value;
 
-  var bdy = 'Name: '+name1+'<br>Subject: '+subject1+'<br>Email: '+email1+'Project: '+project1+'<br> Message: '+message1;
-*/
+  let bdy = 'Name: '+name1+'<br/>Subject: '+subject1+'<br/>Email: '+email1+'<br/>Project: '+project1+'<br/> Message: '+message1;
+
 
 
 
 
   Email.send({
     SecureToken : "cebbab54-38bf-4eae-b0d8-19ee6ec8089d",
-    To : 'asmaul.dev72@gmail.com',
+    To : 'mitu7930@gmail.com',
     From : "junaki874@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : "New message from "+name1,
+    Body : bdy
 }).then(
-message => console.log(message)
+message => 
+
+
+{
+  if(message=='OK'){
+    alert('Yourmessage has been send. Thank you for contact');
+  }else{
+ 
+    alert('Message sending error. Please check again');
+  }
+}
 );
 }
 
@@ -286,6 +296,8 @@ message => console.log(message)
                 </div>
                 <div class="icon">
                   <h3><i class="fas fa-phone"></i>phone</h3>
+                  
+                  <p>01927401710</p>
                   <p>01843017713</p>
                 </div>
               </div>
