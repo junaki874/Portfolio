@@ -19,7 +19,7 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background: linear-gradient(deeppink, rgb(90, 146, 143));
+    background: linear-gradient(#999, #111);
     padding: 5.5rem;
 }
 header{
