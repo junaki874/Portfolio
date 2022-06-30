@@ -506,3 +506,7 @@ background: #555;
         left:-130%;
     }
  }
+ .cell{
+     text-decoration: none;
+     color: white;
+ }
