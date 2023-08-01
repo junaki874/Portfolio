@@ -32,6 +32,14 @@ header{
     border-radius: 1rem;
 
 }
+.heading a{
+    text-decoration: none;
+}
+
+.heading a:hover{
+    color:white
+}
+
  header .user{
      padding-top: 2rem;
 
@@ -130,6 +138,21 @@ header{
     font-weight: lighter;
     color: #eee;
 }
+.para3{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+}
+.career{
+    font-size: 2.2rem;
+    font-weight: lighter;
+    color: rgb(17, 1, 1);
+}
+h3 .career1{
+    font-size: 2.2rem;
+    font-weight: lighter;
+    color: rgb(18, 151, 5);
+}
 .home .name span{
     font-size: 4rem;
     color: #fff;
@@ -172,23 +195,7 @@ header{
     color: #eee;
     padding: .5rem 0;
 }
-.about .skill{
-    padding: 0.5rem 0;
-}
-.about .skill .progress{
-    margin: 1rem 0;
-    padding: 0.5rem;
-    box-shadow: 0 1rem 1rem rgba(0,0,0,.2);
-    background: rgba(255,255,255,.2);
-    font-size: 1.5rem;
-    color: #fff;
-}
-.about .skill .progress h3{
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    color: #fff;
-}
+
 
 .about .skill .progress .bar{
 position: relative;
@@ -221,10 +228,16 @@ background: #555;
     width: 90%;
 }
 
+
 .service .box-container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    overflow: auto;
+}
+.service .box-container .box a{
+ text-decoration: none;
+ color: white;
 }
 .service .box-container .box{
     margin: 1rem;
@@ -232,8 +245,19 @@ background: #555;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
     background: rgba(255,255,255,.2);
-    text-align: center;
+    text-align:center;
     width: 32rem;
+    
+    
+    
+}
+
+.service .box-container .box:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #048f94;
+    color: rgb(17, 1, 1);
+    transition: all ease 0.3s;
+
 }
 .service .box-container .box i{
     color: #fff;
